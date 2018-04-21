@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-21T12:16:15.069Z</updated>
+  <updated>2018-04-21T12:29:58.050Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2018/04/21/%E4%BA%A7%E5%93%81/"/>
     <id>http://yoursite.com/2018/04/21/产品/</id>
     <published>2018-04-20T16:00:00.000Z</published>
-    <updated>2018-04-21T12:16:15.069Z</updated>
+    <updated>2018-04-21T12:29:58.050Z</updated>
     
     <content type="html"><![CDATA[<p><a href="http://mp.weixin.qq.com/s/HCQliHiPxLGxL3kwUiALkw" target="_blank" rel="noopener">产品推广文案</a></p><hr><p><a href="https://mp.weixin.qq.com/s/jNagXKQ8MtYLGryBzbrZaA" target="_blank" rel="noopener">区块链</a></p><hr><p><a href="http://mp.weixin.qq.com/s/btP_q5yR7vgsrT2mqEYRew" target="_blank" rel="noopener">用户研究</a></p><hr><p><a href="http://www.woshipm.com/pmd/946358.html" target="_blank" rel="noopener">如何写好一份prd</a></p><hr><p><a href="http://36kr.com/p/5082227.html" target="_blank" rel="noopener">产品思维</a></p><hr><p><a href="http://www.woshipm.com/evaluating/493299.html" target="_blank" rel="noopener">产品画布</a></p><hr><p><a href="http://www.woshipm.com/pmd/868722.html" target="_blank" rel="noopener">流程图</a></p><hr><p><a href="http://www.woshipm.com/operate/985840.html" target="_blank" rel="noopener">如何运营内容型产品</a></p><hr><p><a href="http://www.woshipm.com/topic/project" target="_blank" rel="noopener">运营方案</a></p><hr><p><a href="http://www.woshipm.com/topic/jp" target="_blank" rel="noopener">竞品分析</a></p><hr>]]></content>
     
@@ -39,7 +39,9 @@
       <category term="产品" scheme="http://yoursite.com/categories/%E4%BA%A7%E5%93%81/"/>
     
     
-      <category term="产品运营" scheme="http://yoursite.com/tags/%E4%BA%A7%E5%93%81%E8%BF%90%E8%90%A5/"/>
+      <category term="产品" scheme="http://yoursite.com/tags/%E4%BA%A7%E5%93%81/"/>
+    
+      <category term="运营" scheme="http://yoursite.com/tags/%E8%BF%90%E8%90%A5/"/>
     
   </entry>
   

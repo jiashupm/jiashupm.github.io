@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="PM" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="现今市面上的音乐app数量旁多，网易云音乐、腾讯系音乐竞争激烈的情况下，虾米音乐又该如何在夹缝中求生存呢？   | 一、概述 产品定位为听者和歌者提供以高品质的音乐为核心的数字娱乐服务，发现小众音乐，交流音乐感受 产品slogan虾米音乐，听·见不同 主要功能       音乐 + 故事 AI电台 高品质音乐，极致听歌体验   体验环境     机型 —— 小米mix2s 系统 —— MIUI">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《虾米音乐》产品体验报告">
+<meta property="og:url" content="http://yoursite.com/2018/06/20/《虾米音乐》产品体验报告/index.html">
+<meta property="og:site_name" content="PM">
+<meta property="og:description" content="现今市面上的音乐app数量旁多，网易云音乐、腾讯系音乐竞争激烈的情况下，虾米音乐又该如何在夹缝中求生存呢？   | 一、概述 产品定位为听者和歌者提供以高品质的音乐为核心的数字娱乐服务，发现小众音乐，交流音乐感受 产品slogan虾米音乐，听·见不同 主要功能       音乐 + 故事 AI电台 高品质音乐，极致听歌体验   体验环境     机型 —— 小米mix2s 系统 —— MIUI">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/%E8%99%BE%E7%B1%B3slogan.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/%E5%A4%A7%E4%BA%8B%E8%AE%B0.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/%E5%A8%B1%E4%B9%90%E9%80%89%E6%8B%A9.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/%E9%9F%B3%E4%B9%90%E5%B9%B3%E5%8F%B0%E5%BA%94%E7%94%A8.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/%E9%9F%B3%E4%B9%90%E6%97%B6%E9%95%BF.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/%E5%9C%A8%E7%BA%BF%E9%9F%B3%E4%B9%90%E5%8F%91%E5%B1%95%E6%A0%B8%E5%BF%83.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/%E9%9C%80%E6%B1%82%E5%9B%BE%E8%B0%B1.PNG">
+<meta property="og:image" content="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/%E8%A1%A8%E7%8E%B0%E5%B1%821.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/%E8%A1%A8%E7%8E%B0%E5%B1%822.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/%E8%A1%A8%E7%8E%B0%E5%B1%823.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/%E6%A1%86%E6%9E%B6%E5%B1%82.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/%E7%BB%93%E6%9E%84%E5%B1%82.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/%E8%8C%83%E5%9B%B4%E5%B1%82.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/%E8%8C%83%E5%9B%B4%E5%B1%82-AI%E7%94%B5%E5%8F%B0.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/%E8%8C%83%E5%9B%B4%E5%B1%82-%E6%AD%8C%E5%8D%95.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/pajian.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/see.jpg">
+<meta property="og:updated_time" content="2018-06-20T10:23:39.280Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《虾米音乐》产品体验报告">
+<meta name="twitter:description" content="现今市面上的音乐app数量旁多，网易云音乐、腾讯系音乐竞争激烈的情况下，虾米音乐又该如何在夹缝中求生存呢？   | 一、概述 产品定位为听者和歌者提供以高品质的音乐为核心的数字娱乐服务，发现小众音乐，交流音乐感受 产品slogan虾米音乐，听·见不同 主要功能       音乐 + 故事 AI电台 高品质音乐，极致听歌体验   体验环境     机型 —— 小米mix2s 系统 —— MIUI">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/%E8%99%BE%E7%B1%B3slogan.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/06/20/《虾米音乐》产品体验报告/"/>
+
+
+
+
+
+  <title>《虾米音乐》产品体验报告 | PM</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+    <a href="https://github.com/you"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub"></a>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">PM</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/20/《虾米音乐》产品体验报告/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="拾一">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="PM">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">《虾米音乐》产品体验报告</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-06-20T18:23:05+08:00">
+                2018-06-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>现今市面上的音乐app数量旁多，网易云音乐、腾讯系音乐竞争激烈的情况下，虾米音乐又该如何在夹缝中求生存呢？</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/%E8%99%BE%E7%B1%B3slogan.png" alt="虾米slogan"></p>
+<h3 id="一、概述"><a href="#一、概述" class="headerlink" title="| 一、概述"></a>| 一、概述</h3><ol>
+<li><strong>产品定位</strong><br>为听者和歌者提供以高品质的音乐为核心的数字娱乐服务，发现小众音乐，交流音乐感受</li>
+<li><strong>产品slogan</strong><br>虾米音乐，听·见不同</li>
+<li><strong>主要功能</strong>    </li>
+</ol>
+<ul>
+<li>音乐 + 故事</li>
+<li>AI电台</li>
+<li>高品质音乐，极致听歌体验</li>
+</ul>
+<ol start="4">
+<li><strong>体验环境</strong>    <ul>
+<li>机型 —— 小米mix2s</li>
+<li>系统 —— MIUI 9.5  基于安卓8.0</li>
+<li>app版本 —— 7.1.0-700502<h3 id="二、市场与行业背景分析"><a href="#二、市场与行业背景分析" class="headerlink" title="| 二、市场与行业背景分析"></a>| 二、市场与行业背景分析</h3><img src="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/%E5%A4%A7%E4%BA%8B%E8%AE%B0.jpg" alt="2017大事记">    </li>
+</ul>
+</li>
+</ol>
+<p>经过2017年的合并，2018年上半年腾讯音乐与网易云音乐达成合作，网易云音乐与QQ音乐版权合作达成一致，今后，双方将共享彼此平台的99%以上曲库，并商定进行音乐版权的长期合作，同时向其他音乐平台开放音乐作品授权，移动音乐市场格局逐渐明晰。     </p>
+<p>根据互联网络信息中心（CNNIC）发布第40次《中国互联网络研究报告》显示，截至2017年6月，我国网民规模达7.72亿，普及率55.8%，其中手机网民规模占97.5%，以手机为中心的智能设备成为万物联网的基础。    </p>
+<p><img src="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/%E5%A8%B1%E4%B9%90%E9%80%89%E6%8B%A9.jpg" alt="娱乐选择">    </p>
+<p>从手机网民娱乐类应用使用率来看，截至1017年12月，网络音乐在手机网民中的使用率为68.0%，仅次于网络视频排在第二位。    </p>
+<p><img src="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/%E9%9F%B3%E4%B9%90%E5%B9%B3%E5%8F%B0%E5%BA%94%E7%94%A8.jpg" alt="音乐平台类应用">   </p>
+<p>经过近十几年的发展，音乐平台类产品已不满足于移动听歌，而是“听、看、唱、玩”多维度满足用户需求。相伴随的，是用户使用一定音乐产品时长的不断增加。</p>
+<p><img src="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/%E9%9F%B3%E4%B9%90%E6%97%B6%E9%95%BF.jpg" alt="听音乐时长"></p>
+<p><img src="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/%E5%9C%A8%E7%BA%BF%E9%9F%B3%E4%B9%90%E5%8F%91%E5%B1%95%E6%A0%B8%E5%BF%83.jpg" alt="发展核心">    </p>
+<p>综合上述行业分析，可大致判断出移动音乐行业以下三大发展趋势：</p>
+<ul>
+<li><p><strong>趋势一：个性化</strong><br>  通过分析用户行为，对用户进行个性化定制推荐，有效提升用户粘性。    </p>
+</li>
+<li><p><strong>趋势二：版权意识强烈化</strong><br>  网易云音乐与QQ音乐99%版权互通情况下，各自手握热门明星、综艺音乐版权。同时出现部分明星数字专辑收费业务，对版权的认知与维护愈发强烈。    </p>
+</li>
+<li><p><strong>趋势三：功能多样化</strong><br>  如今的音乐app已不局限于听歌功能，短视频、音乐故事、AI电台功能已经陆续上线。    </p>
+</li>
+</ul>
+<h3 id="三、用户与需求分析"><a href="#三、用户与需求分析" class="headerlink" title="| 三、用户与需求分析"></a>| 三、用户与需求分析</h3><h4 id="1-用户特点"><a href="#1-用户特点" class="headerlink" title="1. 用户特点"></a>1. 用户特点</h4><hr>
+<p>从曲库丰富度来看，虾米音乐曲库包含大量小众音乐、独立音乐人音乐，这是虾米与网易云、腾讯系音乐产品最大不同之处。    </p>
+<p>可看出其主要用户群体<strong>热爱音乐、喜欢小众文化、容易接受新事物</strong>，而他们的社会角色一般为音乐爱好者、学生等。    </p>
+<h4 id="2-用户需求"><a href="#2-用户需求" class="headerlink" title="2. 用户需求"></a>2. 用户需求</h4><hr>
+<p><img src="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/%E9%9C%80%E6%B1%82%E5%9B%BE%E8%B0%B1.PNG" alt="需求图谱"></p>
+<h5 id="（1）-优秀的听歌体验"><a href="#（1）-优秀的听歌体验" class="headerlink" title="（1） 优秀的听歌体验"></a>（1） 优秀的听歌体验</h5><p>从需求图谱可看出，网友会在虾米音乐、网易云音乐、QQ音乐三大app中做出选择，这里拼的就是体验了。</p>
+<h5 id="（2）-丰富且高质的音乐"><a href="#（2）-丰富且高质的音乐" class="headerlink" title="（2） 丰富且高质的音乐"></a>（2） 丰富且高质的音乐</h5><p>内容是最实在的需求，决定了app使用群体，也是数字听歌业务的核心竞争力。在app中能找到并顺利播放高品质音乐是每一位音乐app用户的终极诉求。</p>
+<h5 id="（3）音乐归类"><a href="#（3）音乐归类" class="headerlink" title="（3）音乐归类"></a>（3）音乐归类</h5><p>在听歌时能够将音乐进行分类以备在不同环境不同场景播放，省去繁琐的更新播放列表工作。由此，歌单功能应运而生。</p>
+<h5 id="（4）发现新音乐"><a href="#（4）发现新音乐" class="headerlink" title="（4）发现新音乐"></a>（4）发现新音乐</h5><p>在已有歌曲基础上，需要不断发现新的歌曲以扩大自己的曲库。该需求的表现就是<strong>日推</strong>功能的上线，根据用户听歌喜好每天为用户推荐若干同一风格的音乐。</p>
+<h5 id="小结："><a href="#小结：" class="headerlink" title="小结："></a>小结：</h5><p>以上列举了用户典型的4个需求，而现有主流音乐app均可满足用户这四点主流需求。只是针对热门音乐会对版权进行买断从而提升自身app核心竞争力。    </p>
+<p>同时在这四点需求之外，不同app加入不同的非核心需求功能，以满足用户不同场景下的使用需求，为app打造更多的应用场景、提升用户体验是为音乐app未来发展的必由之路。</p>
+<h3 id="四、产品深度分析"><a href="#四、产品深度分析" class="headerlink" title="| 四、产品深度分析"></a>| 四、产品深度分析</h3><h4 id="1-表现层分析"><a href="#1-表现层分析" class="headerlink" title="1. 表现层分析"></a>1. 表现层分析</h4><hr>
+<p>视觉设计、表现风格</p>
+<p><img src="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/%E8%A1%A8%E7%8E%B0%E5%B1%821.jpg" alt="表现层1"></p>
+<p><img src="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/%E8%A1%A8%E7%8E%B0%E5%B1%822.jpg" alt="表现层2"></p>
+<p><img src="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/%E8%A1%A8%E7%8E%B0%E5%B1%823.jpg" alt="表现层3"></p>
+<p>以上是app内发现、我的音乐、动态、个人中心、歌曲详情页面，也是app内使用频率最多的几个页面。</p>
+<p>虾米音乐主要以白色和黑色为主色调，页面留白较多，给人以干净简洁的感受，真实的<strong>大道至简</strong>。</p>
+<p>由于简洁干净的UI界面设计，给人一种轻松宁静的感觉。</p>
+<h4 id="2-框架层分析"><a href="#2-框架层分析" class="headerlink" title="2. 框架层分析"></a>2. 框架层分析</h4><hr>
+<p>页面设计、信息展示</p>
+<p><img src="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/%E6%A1%86%E6%9E%B6%E5%B1%82.jpg" alt="框架层"></p>
+<p>以发现页面为例，往往进入app之后的首屏展示内容足够看出主要的设计思想和想要展示的重点信息了。    </p>
+<p>顶栏是搜索框完全遵从现有app设计规范，导航栏和分类栏完全占据页面焦点，夺取用户眼球。使用户打开app就能感受到强烈的冲击感，从而去选择进入自己想要去的分类。</p>
+<p>在页面设计和信息展示上，最重要的就是要有视觉焦点和信息层级的概念，而本身虾米音乐就是简洁的风格，信息层级划分也就更加明显，因为主次分明，符合浏览习惯，用户使用时也不会眼花缭乱。</p>
+<h4 id="3-结构层分析"><a href="#3-结构层分析" class="headerlink" title="3. 结构层分析"></a>3. 结构层分析</h4><hr>
+<p>交互设计、信息结构</p>
+<p><img src="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/%E7%BB%93%E6%9E%84%E5%B1%82.png" alt="结构层"></p>
+<p>以上是虾米音乐的简易信息结构图，可以看到虾米音乐一级页面分为4个，分别为<strong>发现、个人中心、动态、我的音乐</strong>，与网易云音乐的三大栏+菜单栏设计有所不同。</p>
+<p>（1）相对比而言，网易云音乐采用上中下三段设计，而虾米音乐只是上下两层。虾米将歌曲播放信息栏融入到底部四大导航栏内，把下部长条改为圆形按钮，从而大大提升了页面的简洁程度。</p>
+<p>但是虾米为何要这样设计呢？个人认为，虾米在每个页面内的小分类上别具一格，采用字体放大的形式提醒用户位于哪个栏目分类内，如果再加入长条形播放信息栏，无疑使页面变得复杂且难以操作。</p>
+<p>（2） 将个人中心设为独立栏    </p>
+<p>这样的设计使个人中心的入口更加明确简单，同时在一定程度上给予用户使用非核心功能的心理暗示。</p>
+<p>所以从这个层面分析虾米音乐将个人中心入口强化是有一定研究的，也能让我们得到一些启发，虽然是同样的一个功能，但是因为不同的用户，不同的内容，所使用的频率和行为路径也有所不同，所以在信息结构和层级的安排上也需要对应做出调整。</p>
+<h4 id="4-范围层分析"><a href="#4-范围层分析" class="headerlink" title="4. 范围层分析"></a>4. 范围层分析</h4><hr>
+<p>内容需求、功能结构</p>
+<p><img src="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/%E8%8C%83%E5%9B%B4%E5%B1%82.png" alt="范围层"></p>
+<h1 id="明天继续写"><a href="#明天继续写" class="headerlink" title="明天继续写"></a>明天继续写</h1><h5 id="AI电台"><a href="#AI电台" class="headerlink" title="AI电台"></a><strong>AI电台</strong></h5><p><img src="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/%E8%8C%83%E5%9B%B4%E5%B1%82-AI%E7%94%B5%E5%8F%B0.jpg" alt="AI电台"></p>
+<p>AI电台功能为用户提供适应不同场景的听歌功能，用户可以根据需要选择不同的场景，也可根据标签建立电台，从而匹配自身听歌场景。</p>
+<p>通过AI电台，省去了用户筛选歌单的步骤，并且为用户精准推荐相应风格的音乐。这里需要用户去寻找或建立自己喜欢的电台，而使用电台更多的是消磨时间的因素，用户对曲风要求较高。所以如何为用户播放高质、合风格的音乐至关重要。</p>
+<h5 id="自建歌单"><a href="#自建歌单" class="headerlink" title="自建歌单"></a><strong>自建歌单</strong></h5><p><img src="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/%E8%8C%83%E5%9B%B4%E5%B1%82-%E6%AD%8C%E5%8D%95.jpg" alt="自建歌单"></p>
+<p>通过歌单功能，用户可将自身已有歌曲进行归类分组，从而达到只听某类歌曲的目的。目前，歌单功能已广泛运用于各大音乐app。</p>
+<p>但是虾米音乐独树一帜地提供歌单内单曲推荐功能，歌单生产者为每支单曲添加推荐语句，让歌单使用者更加了解该歌单汇总思想，或对某支单曲产生想要去听地欲望等。</p>
+<h5 id="趴间"><a href="#趴间" class="headerlink" title="趴间"></a><strong>趴间</strong></h5><p><img src="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/pajian.jpg" alt="趴间"></p>
+<p>趴间功能为用户提供一个交流的机会。通过“抢位”，用户有机会在趴间内播放自己的歌单，极大提升用户参与感。同时在趴间内，用户可与同风格用户进行交流，达到社交目的。</p>
+<h5 id="看点"><a href="#看点" class="headerlink" title="看点"></a><strong>看点</strong></h5><p><img src="https://raw.githubusercontent.com/jiashupm/photos/master/xiami/see.jpg" alt="看点"></p>
+<p>看点为用户提供<strong>听歌+阅读</strong>功能，看点功能为用户打造类似于微信公众号体验，让用户在听歌的同时了解歌曲、作者背后的故事，有效提高用户使用时长。</p>
+<p>作为音乐app非核心功能，看点功能仍旧为用户提供高质量内容，为虾米音乐的涵盖内容增色不少。</p>
+<h5 id="核心竞争力"><a href="#核心竞争力" class="headerlink" title="核心竞争力"></a>核心竞争力</h5><p>讲到内容和功能这块，我有一些个人的看法，就是搜索的时代已经过去，推荐（推送）的时代早已来临。在看罗振宇的“时间的朋友”演讲的时候，有一段内容我印象比较深刻，关于吃的一段生活经历就是：“我不知道我要吃什么，你告诉我吃什么。”听起来很现实，也是每个人的痛点。一则是因为美食的信息太多了，有好有坏，有真有假，每次选择要研究半天，二则是不够专业，即使有时间挑选，也不一定能够挑对。</p>
+<p>在网购上也是有一样的体会，比如再淘宝上挑选一个保温杯，稍微有点追求的人，没有几个小时根本下不了手。所以现在很多电商不单单只是在应用内提供一些推荐，有些甚至已经是整个应用就是在做精品推荐，就比如网易的严选，能够被收录其中的都是经过精挑细选的产品，从质量到外观都严格把关。</p>
+<p>对虾米音乐来说，想要进一步提高自身核心竞争力，可从<strong>内容筛选</strong>与<strong>推荐算法优化</strong>两个方面入手，不断提高内容质量与推荐质量，使推荐内容走向<strong>精准化、高质化</strong>。</p>
+<h4 id="5-战略层分析"><a href="#5-战略层分析" class="headerlink" title="5. 战略层分析"></a>5. 战略层分析</h4><hr>
+<p>产品目标、商业模式</p>
+<p>我们可以看到虾米音乐的slogan为“<strong>听·见不同</strong>”，而且大部分的功能都是在围绕这句话进行设计，但是这个只能作为运营宣传和初衷，在商业环境下的热门应用，所制定的目标不可能仅仅一句口号概况，想必还有很多指标和宏伟的愿景需要去完成。</p>
+<p>不论在UI设计、功能设计上，虾米确实做到了他们所说的——听·见不同。在移动音乐领域，虾米提供的庞大曲库、高品质高还原度音乐、简洁干净的UI设计、独特的PGC看点功能等等，都体现出虾米<strong>做不同</strong>的企业愿景。</p>
+<h3 id="五、运营模式分析"><a href="#五、运营模式分析" class="headerlink" title="| 五、运营模式分析"></a>| 五、运营模式分析</h3><p>我相信产品运营是一家，好的产品必然需要好的运营，所以在报告里加入了一点个人对运营上的看法，欢迎探讨扶正。</p>
+<h4 id="1-拉新"><a href="#1-拉新" class="headerlink" title="1. 拉新"></a>1. 拉新</h4><hr>
+<h5 id="（1）-邀请好友，互得VIP会员"><a href="#（1）-邀请好友，互得VIP会员" class="headerlink" title="（1） 邀请好友，互得VIP会员"></a>（1） 邀请好友，互得VIP会员</h5><p>因为会员所享有的诸多特权，使得用户更乐于将app安利给身边的人，从而双方都免费获得app特权。可见在拉新机制上，虾米下足了功夫与成本。</p>
+<p>但是赠送会员也有他自有的妙处。用户在体验过VIP特权后，很难适应非会员的低权限。这样的拉新机制从某种程度上有效提升用户转化率与留存率。当然这些都需要依靠数据佐证，因为无法获得核心数据小编在这里也只是猜测。</p>
+<h5 id="（2）-注册送会员"><a href="#（2）-注册送会员" class="headerlink" title="（2） 注册送会员"></a>（2） 注册送会员</h5><p>新用户注册后，虾米马上为新用户奉上VIP大礼包，有效提高用户留存率。</p>
+<h4 id="2-留存"><a href="#2-留存" class="headerlink" title="2. 留存"></a>2. 留存</h4><h5 id="（1）-养虾米"><a href="#（1）-养虾米" class="headerlink" title="（1） 养虾米"></a>（1） 养虾米</h5><p>阿里一贯的运营思路，偷能量、养宠物……在养成的基础上加入公益元素，博取用户同情心与用户自我实现的诉求，有效提升用户的活跃度与留存率。</p>
+<h5 id="（2）-社交"><a href="#（2）-社交" class="headerlink" title="（2） 社交"></a>（2） 社交</h5><p>现今app内似乎一直少不了社交功能，虾米这样的功能设置旨在为用户在音乐app内带来社交元素，能够让用户在app内由更强的互动参与感。</p>
+<h5 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h5><p>这些策略都是需要承担一定的亏损的，但也是互联网行业竞争中必须投入的，关键是这份投入是否收获了同等价值的效果和回报。</p>
+<p>虾米这种会员买用户、买留存、买活跃的做法投入较大，但同样回报可观，具体ROI参考内部数据。</p>
+<h3 id="六、改进建议"><a href="#六、改进建议" class="headerlink" title="| 六、改进建议"></a>| 六、改进建议</h3><h4 id="建议一：规范歌单推荐内容"><a href="#建议一：规范歌单推荐内容" class="headerlink" title="建议一：规范歌单推荐内容"></a>建议一：规范歌单推荐内容</h4><p>虽然虾米独有歌单内单曲推荐机制，但推荐语内容良莠不齐。歌单投稿入口隐藏较深，可强化投稿入口，激发更多投稿。同时优化歌单审核机制，打造歌单推荐UGC模式。</p>
+<h4 id="建议二：-优化AI电台推荐算法"><a href="#建议二：-优化AI电台推荐算法" class="headerlink" title="建议二： 优化AI电台推荐算法"></a>建议二： 优化AI电台推荐算法</h4><p>现有AI电台内歌曲推荐仍旧按照一定顺序进行推荐，就我自己来讲是由些许不满。或许虾米可以参照抖音推荐算法，使电台内的歌曲切换能够打乱顺序并提升相关度，带来更好的听歌体验。</p>
+<h4 id="建议三：-大道至简"><a href="#建议三：-大道至简" class="headerlink" title="建议三： 大道至简"></a>建议三： 大道至简</h4><p>虾米音乐的UI设计可以说是简约干净了，但是产品功能涵盖似乎有些广泛。或许虾米是想做“简约而不简单”，但过多的功能模块似乎并不适用于现阶段的虾米。庞多的功能模块使虾米的核心功能不够突出。而在现阶段，如何提升核心功能，提高产品核心竞争力拉取并留存用户是为关键。</p>
+<p>所以，做好减法，突出重点，虾米才有可能走向成功。</p>
+<h3 id="七、总结"><a href="#七、总结" class="headerlink" title="| 七、总结"></a>| 七、总结</h3><p>虾米音乐给人的感觉，<strong>界面清新简约而功能多样</strong>。曲库占有绝对优势的情况下在歌单功能中有所创新。</p>
+<p>但是在看点与动态功能区的取舍之间笔者与虾米存在一定的分歧。一方是内容，一方是社交，虽说两者都可有效提升用户使用时长但似乎用户总会在两者间有所取舍。</p>
+<p>对于移动音乐app来说，个人认为产品重心应当倾向于内容。而虾米在内容优势将社交比重提升得过高，在一定程度上是否会影响产品定位呢？</p>
+<h5 id="注：本文数据来源：百度指数、千帆易观2017音乐行业研究报告"><a href="#注：本文数据来源：百度指数、千帆易观2017音乐行业研究报告" class="headerlink" title="注：本文数据来源：百度指数、千帆易观2017音乐行业研究报告"></a>注：本文数据来源：百度指数、千帆易观2017音乐行业研究报告</h5>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/05/19/斗鱼直播VS企鹅电竞/" rel="next" title="斗鱼直播VS企鹅电竞">
+                <i class="fa fa-chevron-left"></i> 斗鱼直播VS企鹅电竞
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">拾一</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">categories</span>
+                
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、概述"><span class="nav-number">1.</span> <span class="nav-text">| 一、概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、市场与行业背景分析"><span class="nav-number">2.</span> <span class="nav-text">| 二、市场与行业背景分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、用户与需求分析"><span class="nav-number">3.</span> <span class="nav-text">| 三、用户与需求分析</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-用户特点"><span class="nav-number">3.1.</span> <span class="nav-text">1. 用户特点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-用户需求"><span class="nav-number">3.2.</span> <span class="nav-text">2. 用户需求</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#（1）-优秀的听歌体验"><span class="nav-number">3.2.1.</span> <span class="nav-text">（1） 优秀的听歌体验</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#（2）-丰富且高质的音乐"><span class="nav-number">3.2.2.</span> <span class="nav-text">（2） 丰富且高质的音乐</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#（3）音乐归类"><span class="nav-number">3.2.3.</span> <span class="nav-text">（3）音乐归类</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#（4）发现新音乐"><span class="nav-number">3.2.4.</span> <span class="nav-text">（4）发现新音乐</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#小结："><span class="nav-number">3.2.5.</span> <span class="nav-text">小结：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四、产品深度分析"><span class="nav-number">4.</span> <span class="nav-text">| 四、产品深度分析</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-表现层分析"><span class="nav-number">4.1.</span> <span class="nav-text">1. 表现层分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-框架层分析"><span class="nav-number">4.2.</span> <span class="nav-text">2. 框架层分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-结构层分析"><span class="nav-number">4.3.</span> <span class="nav-text">3. 结构层分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-范围层分析"><span class="nav-number">4.4.</span> <span class="nav-text">4. 范围层分析</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#明天继续写"><span class="nav-number"></span> <span class="nav-text">明天继续写</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#AI电台"><span class="nav-number">0.0.1.</span> <span class="nav-text">AI电台</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#自建歌单"><span class="nav-number">0.0.2.</span> <span class="nav-text">自建歌单</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#趴间"><span class="nav-number">0.0.3.</span> <span class="nav-text">趴间</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#看点"><span class="nav-number">0.0.4.</span> <span class="nav-text">看点</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#核心竞争力"><span class="nav-number">0.0.5.</span> <span class="nav-text">核心竞争力</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-战略层分析"><span class="nav-number">0.1.</span> <span class="nav-text">5. 战略层分析</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#五、运营模式分析"><span class="nav-number">1.</span> <span class="nav-text">| 五、运营模式分析</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-拉新"><span class="nav-number">1.1.</span> <span class="nav-text">1. 拉新</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#（1）-邀请好友，互得VIP会员"><span class="nav-number">1.1.1.</span> <span class="nav-text">（1） 邀请好友，互得VIP会员</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#（2）-注册送会员"><span class="nav-number">1.1.2.</span> <span class="nav-text">（2） 注册送会员</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-留存"><span class="nav-number">1.2.</span> <span class="nav-text">2. 留存</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#（1）-养虾米"><span class="nav-number">1.2.1.</span> <span class="nav-text">（1） 养虾米</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#（2）-社交"><span class="nav-number">1.2.2.</span> <span class="nav-text">（2） 社交</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#小结"><span class="nav-number">1.2.3.</span> <span class="nav-text">小结</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#六、改进建议"><span class="nav-number">2.</span> <span class="nav-text">| 六、改进建议</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#建议一：规范歌单推荐内容"><span class="nav-number">2.1.</span> <span class="nav-text">建议一：规范歌单推荐内容</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#建议二：-优化AI电台推荐算法"><span class="nav-number">2.2.</span> <span class="nav-text">建议二： 优化AI电台推荐算法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#建议三：-大道至简"><span class="nav-number">2.3.</span> <span class="nav-text">建议三： 大道至简</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#七、总结"><span class="nav-number">3.</span> <span class="nav-text">| 七、总结</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#注：本文数据来源：百度指数、千帆易观2017音乐行业研究报告"><span class="nav-number">3.0.1.</span> <span class="nav-text">注：本文数据来源：百度指数、千帆易观2017音乐行业研究报告</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">拾一</span>
+
+  
+</div>
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
